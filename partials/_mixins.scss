@@ -1,0 +1,38 @@
+// ========== just like: 'functions' ==========
+
+// mixins for our 'buttons'
+@mixin button($textColor: $white-color, $backgroundColor: $secondary-color) {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.75rem 1rem;
+  border-radius: 0.4rem;
+  background: $backgroundColor;
+  color: $textColor;
+  cursor: pointer;
+
+  // for an 'animated effect' to make the transition smoother and more visually appealing.
+  transition: all 400ms ease;
+  // all: Specifies that all properties should transition.
+  // 400ms: Specifies the duration of the transition (in this case, 400 milliseconds).
+  // ease: Specifies the timing function for the transition.
+  // 'ease' is a predefined timing function that starts slow, accelerates, and then slows down again towards the end of the transition.
+
+  &:hover {
+    // background: lighten($color: backgroundColor, $amount: 80%);
+    background: lighten($backgroundColor, 20%);
+    box-shadow: 0 1rem 1.6rem rgba($black-color, 0.15);
+  }
+}
+
+@mixin gradientBackground {
+  background: linear-gradient(135deg, $primary-color, $primary-color-variant);
+  color: $white-color;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $white-color;
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "files.autoSaveWhenNoErrors": true,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "wrap-console-log.autoFormat": true,
+    "python.analysis.autoFormatStrings": true,
+    "livePreview.defaultPreviewPath": "/index.html",
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/css",
+            "savePathReplacementPairs": null
+        }
+    ],
+    "editor.formatOnSave": true,
+    "less.format.maxPreserveNewLines": null,
+    "C_Cpp.vcFormat.newLine.scopeBracesOnSeparateLines": true,
+    "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": false,
+    "css.format.spaceAroundSelectorSeparator": true,
+    "scss.format.spaceAroundSelectorSeparator": true,
+    "less.format.spaceAroundSelectorSeparator": true,
+    "files.autoSave": "onFocusChange",
+    "autoimport.doubleQuotes": true
+}
