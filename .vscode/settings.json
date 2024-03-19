@@ -21,5 +21,9 @@
     "scss.format.spaceAroundSelectorSeparator": true,
     "less.format.spaceAroundSelectorSeparator": true,
     "files.autoSave": "onFocusChange",
-    "autoimport.doubleQuotes": true
+    "autoimport.doubleQuotes": true,
+    "eslint.format.enable": false,
+    "json.format.keepLines": true,
+    "scss.format.maxPreserveNewLines": null,
+    "css.format.maxPreserveNewLines": null
 }

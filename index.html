@@ -2,22 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Hospital Website using HTML,Sass, & JavaScript</title>
-    <!-- minified css -->
-    <link rel="stylesheet" href="./css/style.min.css" />
-    <!-- <link rel="stylesheet" href="./style.scss" /> -->
+
     <!-- Boxicons CDN  -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <!-- (Latest Version) Link Swiper's CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    /> -->
+
+    <!-- minified css -->
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
+
   <body>
     <nav>
       <div class="container">
-        <a href="h3" class="nav_logo"><h3>EGATOR</h3></a>
+        <a href="h3" class="nav_logo">
+          <h3>EGATOR</h3>
+        </a>
         <ul id="nav_items">
           <li><a href="#home">Home</a></li>
           <li><a href="#services">Services</a></li>
@@ -25,11 +39,23 @@
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#appointment" class="btn">Make Appointment</a></li>
         </ul>
-        <button id="open_nav-btn"><i class="bx bx-menu"></i></button>
-        <button id="close_nav-btn"><i class="bx bx-x"></i></button>
+        <button
+          id="open_nav-btn"
+          type="button"
+          aria-label="Open navigation menu"
+        >
+          <i class="bx bx-menu"></i>
+        </button>
+        <button
+          id="close_nav-btn"
+          type="button"
+          aria-label="Open navigation menu"
+        >
+          <i class="bx bx-x"></i>
+        </button>
       </div>
     </nav>
-    <!-- ================= End of Nav =============== -->
+    <!-- ================= End of Nav ===============  -->
 
     <header>
       <div class="container">
@@ -49,16 +75,18 @@
         </div>
       </div>
     </header>
-    <!-- ================= End of Header =============== -->
+    <!-- ================= End of Header ===============  -->
 
     <section id="services">
       <h2>Our Services</h2>
+
       <p>
         Whether you are seeking routine check-ups, medical consultations, or
         long-term care plans, we are here to help you achieve optimal health and
         well-being. Your health is our priority, and we are committed to
         providing you with the best possible care.
       </p>
+
       <div class="container">
         <article>
           <i class="bx bx-book-content"></i>
@@ -138,7 +166,7 @@
         </article>
       </div>
     </section>
-    <!-- ================= End of Services Section =============== -->
+    <!-- ================= End of Services Section ===============  -->
     <section id="specialists">
       <h2>Our Top Specialists</h2>
       <p>
@@ -159,16 +187,32 @@
           </div>
 
           <div class="specialist_socials">
-            <a href="https://linkedin.com" target="_blank"
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener"
+              title="Visit our linkedin page"
               ><i class="bx bxl-linkedin"></i
             ></a>
-            <a href="https://twitter.com" target="_blank"
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener"
+              title="Visit our twitter page"
               ><i class="bx bxl-twitter"></i
             ></a>
-            <a href="https://facebook.com" target="_blank"
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener"
+              title="Visit our Facebook page"
               ><i class="bx bxl-facebook"></i
             ></a>
-            <a href="https://instagram.com" target="_blank"
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener"
+              title="Visit our instagram page"
               ><i class="bx bxl-instagram"></i
             ></a>
           </div>
@@ -176,6 +220,8 @@
             href="https://api.whatsapp.com/send?phone=+23355"
             class="specialist_whatsapp"
             target="_blank"
+            rel="noopener"
+            title="Visit our specialist_whatsapp page"
             ><i class="bx bxl-whatsapp"></i
           ></a>
         </article>
@@ -191,16 +237,32 @@
           </div>
 
           <div class="specialist_socials">
-            <a href="https://linkedin.com" target="_blank"
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener"
+              title="Visit our linkedin page"
               ><i class="bx bxl-linkedin"></i
             ></a>
-            <a href="https://twitter.com" target="_blank"
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener"
+              title="Visit our twitter page"
               ><i class="bx bxl-twitter"></i
             ></a>
-            <a href="https://facebook.com" target="_blank"
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener"
+              title="Visit our Facebook page"
               ><i class="bx bxl-facebook"></i
             ></a>
-            <a href="https://instagram.com" target="_blank"
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener"
+              title="Visit our instagram page"
               ><i class="bx bxl-instagram"></i
             ></a>
           </div>
@@ -208,6 +270,8 @@
             href="https://api.whatsapp.com/send?phone=+23355"
             class="specialist_whatsapp"
             target="_blank"
+            rel="noopener"
+            title="Visit our specialist_whatsapp page"
             ><i class="bx bxl-whatsapp"></i
           ></a>
         </article>
@@ -223,16 +287,32 @@
           </div>
 
           <div class="specialist_socials">
-            <a href="https://linkedin.com" target="_blank"
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener"
+              title="Visit our linkedin page"
               ><i class="bx bxl-linkedin"></i
             ></a>
-            <a href="https://twitter.com" target="_blank"
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener"
+              title="Visit our twitter page"
               ><i class="bx bxl-twitter"></i
             ></a>
-            <a href="https://facebook.com" target="_blank"
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener"
+              title="Visit our Facebook page"
               ><i class="bx bxl-facebook"></i
             ></a>
-            <a href="https://instagram.com" target="_blank"
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener"
+              title="Visit our instagram page"
               ><i class="bx bxl-instagram"></i
             ></a>
           </div>
@@ -240,6 +320,8 @@
             href="https://api.whatsapp.com/send?phone=+23355"
             class="specialist_whatsapp"
             target="_blank"
+            rel="noopener"
+            title="Visit our specialist_whatsapp page"
             ><i class="bx bxl-whatsapp"></i
           ></a>
         </article>
@@ -255,16 +337,32 @@
           </div>
 
           <div class="specialist_socials">
-            <a href="https://linkedin.com" target="_blank"
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener"
+              title="Visit our linkedin page"
               ><i class="bx bxl-linkedin"></i
             ></a>
-            <a href="https://twitter.com" target="_blank"
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener"
+              title="Visit our twitter page"
               ><i class="bx bxl-twitter"></i
             ></a>
-            <a href="https://facebook.com" target="_blank"
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener"
+              title="Visit our Facebook page"
               ><i class="bx bxl-facebook"></i
             ></a>
-            <a href="https://instagram.com" target="_blank"
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener"
+              title="Visit our instagram page"
               ><i class="bx bxl-instagram"></i
             ></a>
           </div>
@@ -272,12 +370,199 @@
             href="https://api.whatsapp.com/send?phone=+23355"
             class="specialist_whatsapp"
             target="_blank"
+            rel="noopener"
+            title="Visit our specialist_whatsapp page"
             ><i class="bx bxl-whatsapp"></i
           ></a>
         </article>
       </div>
     </section>
+
     <!-- ================= End of Specialists Section =============== -->
-    <article><script src="./main.js"></script></article>
+    <div>
+      <h2>What Our Patients Say</h2>
+      <p>Staff was cooperative with us, thank you.</p>
+    </div>
+
+    <section id="testimonials" class="swiper">
+      <h2>What Our Patients Say</h2>
+      <p>Staff was cooperative with us, thank you.</p>
+      <div class="swiper-wrapper">
+        <article class="swiper-slide">
+          <p>
+            Exceptional care and compassion! The medical team at this hospital
+            went above and beyond to ensure my recovery.
+          </p>
+
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar1.jpg" alt="Patient 1" />
+            </div>
+
+            <div class="patient_details">
+              <h5>Ola Samy</h5>
+              <small>Patient</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="swiper-slide">
+          <p>Highly impressed with the expertise of the specialists here.</p>
+
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar2.jpg" alt="Patient 2" />
+            </div>
+
+            <div class="patient_details">
+              <h5>Sherif Nagy</h5>
+              <small>Patient</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="swiper-slide">
+          <p>
+            I cannot thank the staff enough for the outstanding care I received
+            during my recent visit.
+          </p>
+
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar3.jpg" alt="Patient 3" />
+            </div>
+
+            <div class="patient_details">
+              <h5>Ammar Selim</h5>
+              <small>Patient</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="swiper-slide">
+          <p>
+            Grateful for the timely assistance and professionalism exhibited by
+            the entire medical team.
+          </p>
+
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar4.jpg" alt="Patient 4" />
+            </div>
+
+            <div class="patient_details">
+              <h5>Noha Fathy</h5>
+              <small>Patient</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="swiper-slide">
+          <p>
+            The nurses and doctors at this hospital demonstrated genuine care
+            and concern for my well-being.
+          </p>
+
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar5.jpg" alt="Patient 5" />
+            </div>
+
+            <div class="patient_details">
+              <h5>Reham Fayed</h5>
+              <small>Patient</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="swiper-slide">
+          <p>
+            The staff was attentive, the facilities were top-notch, and the
+            medical care was exceptional.
+          </p>
+
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar6.jpg" alt="Patient 6" />
+            </div>
+
+            <div class="patient_details">
+              <h5>Laila Atef</h5>
+              <small>Patient</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="swiper-slide">
+          <p>
+            Highly recommend this hospital for its patient-centered approach.
+          </p>
+
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar7.jpg" alt="Patient 7" />
+            </div>
+
+            <div class="patient_details">
+              <h5>Ahlam Ramy</h5>
+              <small>Patient</small>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- ================= End of Review Section =============== -->
+
+    <!-- ================= End of the window =============== -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Testimonial section (swiper js) -->
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: false,
+        },
+        // Default parameters
+        slidesPerView: 1,
+        spaceBetween: 10,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+
+    <!-- JS file -->
+    <script src="./main.js"></script>
   </body>
 </html>

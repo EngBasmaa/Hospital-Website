@@ -1,0 +1,58 @@
+.swiper {
+  width: 82%;
+  width: 100%;
+  height: 100%;
+
+  .swiper-wrapper {
+    .swiper-slide {
+      @include gradientBackground;
+      margin-top: 2rem;
+      padding: 1.5rem 2rem;
+      border-radius: 2rem;
+      cursor: default;
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+
+      text-align: center;
+
+      object-fit: cover;
+
+      p {
+        margin-bottom: 1.5rem;
+      }
+
+      .patient {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .avatar {
+          width: 2.5rem;
+          // to make the 'height' the same as the 'width' using 1/1
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+          // to hide what around the circular avatar
+          //   overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+// ====================== Media Queries (Medium Devices) ======================
+@media screen and (max-width: 1024px) {
+}
+// ====================== Media Queries (Small Devices) ======================
+@media screen and (max-width: 600px) {
+  .swiper {
+    .swiper-wrapper {
+      display: grid;
+      article {
+        padding: 1.5rem;
+      }
+    }
+  }
+}
