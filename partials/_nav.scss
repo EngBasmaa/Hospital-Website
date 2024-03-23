@@ -7,6 +7,11 @@ nav {
   place-items: center;
   @include gradientBackground;
   box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
+
+  //'navbar' styles on 'scroll' using 'JS'
+  &.window-scroll {
+    background: linear-gradient(150deg, $secondary-color, rgb(51, 120, 248));
+  }
 }
 
 .container {

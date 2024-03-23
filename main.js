@@ -13,3 +13,19 @@ closeNavBtn.addEventListener("click", () => {
   openNavBtn.style.display = "flex";
   closeNavBtn.style.display = "none";
 });
+
+// close 'nav' menue when a 'menue item' is 'clicked'
+if (window.innerWidth < 1024) {
+  document.querySelectorAll("#nav_Items li a").forEach((navItem) => {
+    navItem.addEventListener("click", () => {
+      closeNavBtn();
+    });
+  });
+}
+
+// change 'navbar' styles on 'scroll'
+window.addEventListener("scroll", () => {
+  document
+    .querySelector("nav")
+    .classList.toggle("window-scroll", window.scrollY > 0);
+});

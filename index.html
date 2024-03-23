@@ -6,24 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Hospital Website using HTML,Sass, & JavaScript</title>
 
-    <!-- Boxicons CDN  -->
+    <!-- (Boxicons) CDN  -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
 
     <!-- (Latest Version) Link Swiper's CSS -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    /> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
 
-    <!-- minified css -->
-    <link rel="stylesheet" href="./css/style.min.css" />
+    <!-- (Swipers) CDN  -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <!-- minified css -->
+    <link rel="stylesheet" href="./css/style.min.css" />
   </head>
 
   <body>
@@ -33,7 +32,7 @@
           <h3>EGATOR</h3>
         </a>
         <ul id="nav_items">
-          <li><a href="#home">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#specialists">Specialists</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
@@ -379,19 +378,16 @@
     </section>
 
     <!-- ================= End of Specialists Section =============== -->
-    <div>
-      <h2>What Our Patients Say</h2>
-      <p>Staff was cooperative with us, thank you.</p>
-    </div>
 
     <section id="testimonials" class="swiper">
       <h2>What Our Patients Say</h2>
       <p>Staff was cooperative with us, thank you.</p>
+
       <div class="swiper-wrapper">
         <article class="swiper-slide">
           <p>
-            Exceptional care and compassion! The medical team at this hospital
-            went above and beyond to ensure my recovery.
+            The medical team at this hospital went above and beyond to ensure my
+            recovery.
           </p>
 
           <div class="patient">
@@ -423,8 +419,8 @@
 
         <article class="swiper-slide">
           <p>
-            I cannot thank the staff enough for the outstanding care I received
-            during my recent visit.
+            I thanked the staff for the outstanding care I received during my
+            recent visit.
           </p>
 
           <div class="patient">
@@ -441,8 +437,8 @@
 
         <article class="swiper-slide">
           <p>
-            Grateful for the timely assistance and professionalism exhibited by
-            the entire medical team.
+            Grateful for the professionalism exhibited by the entire medical
+            team.
           </p>
 
           <div class="patient">
@@ -459,8 +455,7 @@
 
         <article class="swiper-slide">
           <p>
-            The nurses and doctors at this hospital demonstrated genuine care
-            and concern for my well-being.
+            The nurses and doctors at this hospital demonstrated genuine care.
           </p>
 
           <div class="patient">
@@ -477,8 +472,7 @@
 
         <article class="swiper-slide">
           <p>
-            The staff was attentive, the facilities were top-notch, and the
-            medical care was exceptional.
+            the facilities were top-notch and the medical care was exceptional.
           </p>
 
           <div class="patient">
@@ -512,15 +506,198 @@
       </div>
 
       <!-- Navigation buttons -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <!-- <div class="swiper-button-next"></div> -->
+      <!-- <div class="swiper-button-prev"></div> -->
 
-      <!-- Pagination -->
+      <!-- Pagination ... 'outside' of the 'container' -->
       <div class="swiper-pagination"></div>
     </section>
 
-    <!-- ================= End of Review Section =============== -->
+    <!-- ================= End of Restimonials =============== -->
+    <section id="appointment">
+      <div class="container">
+        <!-- Part 1 -->
+        <div class="info">
+          <h2>Get an Appointment</h2>
+          <p>
+            Our online booking system allows you to choose your preferred date
+            and time, You can book an appointment from anywhere at any time,
+            ensuring that you can plan your visit according to your convenience.
+          </p>
 
+          <article>
+            <div class="info_item">
+              <i class="bx bx-user"></i>
+            </div>
+
+            <div>
+              <h4>Experience Doctors</h4>
+              <small
+                >They are committed to staying up-to-date with the latest
+                medical advancements and work closely with our team to ensure
+                that you receive the best possible care, tailored to your
+                specific health needs and preferences.</small
+              >
+            </div>
+          </article>
+
+          <article>
+            <div class="info_item">
+              <i class="bx bx-bulb"></i>
+            </div>
+
+            <div>
+              <h4>Advanced Technology</h4>
+              <small
+                >Our hospital is equipped with state-of-the-art diagnostic
+                tools, surgical equipment, and medical imaging technologies that
+                allow us to diagnose and treat a wide range of conditions with
+                precision and efficiency.</small
+              >
+            </div>
+          </article>
+
+          <article>
+            <div class="info_item">
+              <i class="bx bx-first-aid"></i>
+            </div>
+
+            <div>
+              <h4>Emergency Care</h4>
+              <small
+                >Our emergency services are equipped to handle critical
+                situations and ensure immediate medical assistance. to provide
+                prompt and effective care when you need it the most.</small
+              >
+            </div>
+          </article>
+        </div>
+
+        <!-- Part 2 -->
+        <form action="https://formspree.io/f/mayrdzaa" method="POST">
+          <div class="form_group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              name="Patient's Name"
+              id="name"
+              required
+            />
+            <!-- Note: 'name' is the label in the (database tabel of records) -->
+          </div>
+
+          <div class="form_group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="number"
+              placeholder="Enter Your Phone"
+              name="Patient's Phone"
+              id="phone"
+              required
+            />
+          </div>
+
+          <div class="form_group">
+            <label for="date">Date</label>
+            <input
+              type="date"
+              placeholder="Choose a Date"
+              name="Patient's Date"
+              id="date"
+              required
+            />
+          </div>
+
+          <div class="form_group">
+            <label for="department">Select Department</label>
+            <select name="Department" id="department" required>
+              <option value="Department 1">Department 1</option>
+              <option value="Department 2">Department 2</option>
+              <option value="Department 3">Department 3</option>
+              <option value="Department 4">Department 4</option>
+              <option value="Department 5">Department 5</option>
+            </select>
+          </div>
+
+          <div class="form_group">
+            <label for="doctor">Select Doctor</label>
+            <select name="Doctor" id="doctor" required>
+              <option value="Doctor 1">Doctor 1</option>
+              <option value="Doctor 2">Doctor 2</option>
+              <option value="Doctor 3">Doctor 3</option>
+              <option value="Doctor 4">Doctor 4</option>
+              <option value="Doctor 5">Doctor 5</option>
+            </select>
+          </div>
+
+          <div class="form_group">
+            <label for="message">Additional Message</label>
+            <textarea
+              name="Patient's Date"
+              id="date"
+              rows="6"
+              placeholder="Add a Message"
+              required
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Submit Request" class="btn-primary" />
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= End of Appointment =============== -->
+    <footer>
+      <div class="container">
+        <article>
+          <a href="#" class="footer_logo">EGATOR</a>
+          <p>Your Trusted Partner in Healthcare Excellence</p>
+          <div>
+            <i class="bx bxs-phone"></i>
+            <small>+2345678997</small>
+          </div>
+          <div>
+            <i class="bx bx-envelope"></i>
+            <small>support@egattor.com</small>
+          </div>
+        </article>
+
+        <article>
+          <h3>Support</h3>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Purchasing Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Career</a>
+        </article>
+
+        <article>
+          <h3>Permalinks</h3>
+          <a href="#">Home</a>
+          <a href="#Services">Services</a>
+          <a href="#Specialists">Specialists</a>
+          <a href="#Testimonials">Testimonials</a>
+          <a href="#Appointment" class="btn-primary">Get Appointment</a>
+        </article>
+
+        <article>
+          <h3>Contact Us</h3>
+          <p>Press</p>
+          <p>FAQs</p>
+          <div>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="copyright">
+        <small>&copy; Copyright EGATOR TUTORIALS. All Rights Reserved.</small>
+      </div>
+    </footer>
     <!-- ================= End of the window =============== -->
 
     <!-- Swiper JS -->
@@ -533,6 +710,7 @@
         loop: true,
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
         },
         scrollbar: {
           el: ".swiper-scrollbar",
@@ -541,16 +719,17 @@
         // Default parameters
         slidesPerView: 1,
         spaceBetween: 10,
+
         // Responsive breakpoints
         breakpoints: {
           // when window width is >= 320px
           320: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 20,
           },
           // when window width is >= 480px
           480: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 30,
           },
           // when window width is >= 640px
